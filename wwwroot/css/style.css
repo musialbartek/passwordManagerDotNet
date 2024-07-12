@@ -1,0 +1,102 @@
+body {
+  background: rgb(30, 30, 30);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Roboto Mono", monospace;
+}
+
+.card {
+  border-radius: 1.25rem;
+  overflow: hidden;
+  background: rgb(40, 40, 40);
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.password-list {
+  border-left: 1px solid white;
+  padding-left: 2.8125rem;
+}
+
+hr {
+  background-color: white;
+  opacity: 1;
+}
+
+h1, .h1 {
+  color: rgba(240, 46, 170, 0.9);
+}
+
+a {
+  color: white;
+}
+a:hover {
+  color: white;
+}
+
+.btn-outline-success {
+  border-radius: 0.9375rem;
+  color: rgb(240, 46, 170);
+  border-color: rgb(240, 46, 170);
+}
+.btn-outline-success:hover {
+  background-color: rgba(240, 46, 170, 0.4);
+  border-color: rgba(240, 46, 170, 0.4);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding-top: 1.25rem;
+}
+
+.navbar-brand {
+  width: 3.75rem;
+  height: 3.75rem;
+  color: white;
+  display: block;
+  background: rgba(240, 46, 170, 0.4);
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+  font-size: 1.875rem;
+  border-radius: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+select.form-control {
+  background: transparent;
+  border: 2px solid rgba(240, 46, 170, 0.8);
+  padding: 3px 10px;
+  color: white;
+}
+select.form-control option {
+  color: black;
+}
+
+label {
+  margin-bottom: 0.9375rem;
+  color: white;
+}
+
+input, input.form-control {
+  background: transparent;
+  border: 2px solid rgba(240, 46, 170, 0.8) !important;
+  border-radius: 15px;
+  padding: 3px 10px;
+  color: white;
+  box-shadow: unset !important;
+}
+
+.show-password {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-70%, -50%);
+  cursor: pointer;
+}

@@ -1,0 +1,107 @@
+@function rem($value) {
+    $remValue: ($value / 16) + rem; 
+    @return $remValue;
+}
+
+body {
+    background: rgb(30, 30, 30);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Roboto Mono", monospace;
+}
+
+.card{
+    border-radius: rem(20);
+    overflow: hidden;
+    background: rgb(040,040,040);
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.password-list{
+    border-left: 1px solid white;
+    padding-left: rem(45);
+}
+hr{
+    background-color: white;
+    opacity: 1;
+}
+
+h1, .h1{
+    color: rgba(240, 46, 170, 0.9);
+}
+
+a{
+    color: white;
+    &:hover{
+        color: white;
+    }
+}
+
+.btn-outline-success{
+    border-radius: rem(15);
+    color: rgba(240, 46, 170, 1);
+    border-color: rgba(240, 46, 170, 1);
+    &:hover{
+        background-color: rgba(240, 46, 170, 0.4);
+        border-color: rgba(240, 46, 170, 0.4);
+    }
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding-top: rem(20);
+}
+
+.navbar-brand{
+    width: rem(60);
+    height: rem(60);
+    color: white;
+    display: block;
+    background: rgba(240, 46, 170, 0.4);
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    font-size: rem(30);
+    border-radius: rem(20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+select.form-control{
+    background: transparent;
+    border: 2px solid rgba(240, 46, 170, 0.8);
+    padding: 3px 10px;
+    color: white;
+    option{
+        color: black;
+    }
+}
+
+label{
+    margin-bottom: rem(15);
+    color: white;
+}
+
+input, input.form-control{
+    background: transparent;
+    border: 2px solid rgba(240, 46, 170, 0.8) !important;
+    border-radius: 15px;
+    padding: 3px 10px;
+    color: white;
+    box-shadow: unset !important;
+}
+
+.show-password{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-70%, -50%);
+    cursor: pointer;
+
+}

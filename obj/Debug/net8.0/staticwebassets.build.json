@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "upazVyo6U+cibLQdDTIzPsRBTrm3ORCWSsokeQPVgH4=",
+  "Hash": "Q76SOgwNGv3zdOQAxO0JasI6a5uD2rfov7v/iTjHdqw=",
   "Source": "PasswordManager",
   "BasePath": "_content/PasswordManager",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\barte\\Desktop\\Projekt-main\\PasswordManager\\wwwroot\\css\\style.css",
+      "SourceId": "PasswordManager",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\barte\\Desktop\\Projekt-main\\PasswordManager\\wwwroot\\",
+      "BasePath": "_content/PasswordManager",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
       "Identity": "C:\\Users\\barte\\Desktop\\Projekt-main\\PasswordManager\\wwwroot\\favicon.ico",
@@ -1193,6 +1212,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\barte\\Desktop\\Projekt-main\\PasswordManager\\wwwroot\\scss\\style.scss",
+      "SourceId": "PasswordManager",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\barte\\Desktop\\Projekt-main\\PasswordManager\\wwwroot\\",
+      "BasePath": "_content/PasswordManager",
+      "RelativePath": "scss/style.scss",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\scss\\style.scss"
     }
   ]
 }

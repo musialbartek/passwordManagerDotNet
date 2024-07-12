@@ -1,0 +1,20 @@
+{
+  "name": "passwordmanager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-scss": "sass --no-source-map wwwroot/scss:wwwroot/css",
+    "watch-scss": "sass --no-source-map --watch wwwroot/scss:wwwroot/css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.77.8"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.11.3"
+  }
+}

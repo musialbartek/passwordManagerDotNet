@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\barte\\Desktop\\Projekt-main\\PasswordManager\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
       "Id": "C:\\Users\\barte\\Desktop\\Projekt-main\\PasswordManager\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -243,6 +247,10 @@
     {
       "Id": "C:\\Users\\barte\\Desktop\\Projekt-main\\PasswordManager\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\barte\\Desktop\\Projekt-main\\PasswordManager\\wwwroot\\scss\\style.scss",
+      "PackagePath": "staticwebassets\\scss\\style.scss"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.PasswordManager.Microsoft.AspNetCore.StaticWebAssets.props",

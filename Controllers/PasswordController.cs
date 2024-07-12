@@ -1,7 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using PasswordManager.Models;
 using System.Linq;
-
+using System.Threading.Tasks;
 
 namespace PasswordManager.Controllers
 {
@@ -14,9 +15,9 @@ namespace PasswordManager.Controllers
             _context = context;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var passwords = _context.PasswordEntries.ToList();
+            var passwords = await _context.PasswordEntries.ToListAsync();
             return View(passwords);
         }
 
@@ -27,21 +28,22 @@ namespace PasswordManager.Controllers
         }
 
         [HttpPost]
-        public IActionResult Add(PasswordEntry entry)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Add(PasswordEntry entry)
         {
             if (ModelState.IsValid)
             {
                 _context.PasswordEntries.Add(entry);
-                _context.SaveChanges();
-                return RedirectToAction("Index");
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
             }
             return View(entry);
         }
 
         [HttpGet]
-        public IActionResult Edit(int id)
+        public async Task<IActionResult> Edit(int id)
         {
-            var entry = _context.PasswordEntries.FirstOrDefault(e => e.Id == id);
+            var entry = await _context.PasswordEntries.FindAsync(id);
             if (entry == null)
             {
                 return NotFound();
@@ -50,26 +52,28 @@ namespace PasswordManager.Controllers
         }
 
         [HttpPost]
-        public IActionResult Edit(PasswordEntry entry)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(PasswordEntry entry)
         {
             if (ModelState.IsValid)
             {
                 _context.Update(entry);
-                _context.SaveChanges();
-                return RedirectToAction("Index");
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
             }
             return View(entry);
         }
 
         [HttpPost]
-        public IActionResult Delete(int id)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete(int id)
         {
-            var entry = _context.PasswordEntries.FirstOrDefault(e => e.Id == id);
+            var entry = await _context.PasswordEntries.FindAsync(id);
             if (entry != null)
             {
                 _context.PasswordEntries.Remove(entry);
-                _context.SaveChanges();
-                return RedirectToAction("Index");
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
             }
             return NotFound();
         }
